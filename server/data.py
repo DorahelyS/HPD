@@ -1,3 +1,4 @@
+'''
 import requests
 
 url = 'http://localhost:5555/data'
@@ -8,3 +9,5 @@ if response.status_code == 200:
     print(data)  
 else:
     print('Failed to fetch data:', response.status_code)
+
+'''
