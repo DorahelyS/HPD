@@ -37,7 +37,7 @@ function App() {
     }
   };
 
-  const colors = ['#8fbc8f', '#cd853f', '#4682b4', '#bc8f8f', '#ff8c00'];
+  const colors = ['#55DA97', '#F5A623', '#4A90E2', '#DB4DF7', '#FF1418'];
   const legendLabelColor = '#a9a9a9';
 
   return (
