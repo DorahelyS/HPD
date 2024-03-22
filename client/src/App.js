@@ -3,14 +3,18 @@ import './App.css';
 import { Bar } from 'react-chartjs-2';
 
 function App() {
+  //keeping track of borough and postcode state
   const [boroughData, setBoroughData] = useState([]);
   const [postcodeData, setPostcodeData] = useState([]);
 
+  //fetching data once - stopping infinite loop
   useEffect(() => {
     fetchBoroughData();
     fetchPostcodeData();
   }, []);
 
+
+  //fetching to backend api
   const fetchBoroughData = async () => {
     try {
       const response = await fetch('http://127.0.0.1:5555/borough');
@@ -24,6 +28,7 @@ function App() {
     }
   };
 
+  //fetching to backend api
   const fetchPostcodeData = async () => {
     try {
       const response = await fetch('http://127.0.0.1:5555/postcode');
@@ -37,9 +42,11 @@ function App() {
     }
   };
 
+  //creating global variable of colors to use in my return for the chart 
   const colors = ['#55DA97', '#F5A623', '#4A90E2', '#DB4DF7', '#FF1418'];
   const legendLabelColor = '#a9a9a9';
 
+  //creating chart with chart.js
   return (
     <div className="App">
       <header className="App-header">
@@ -80,7 +87,7 @@ function App() {
             }}
           />
         </div>
-        <div style={{ height: '400px', width: '1200px' }}>
+        <div style={{ height: '400px', width: '2000px' }}>
           <Bar
             data={{
               labels: postcodeData.map(entry => entry.postcode),
