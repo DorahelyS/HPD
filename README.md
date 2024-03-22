@@ -16,7 +16,9 @@ I charted the findings for a clear visual representation of the data, leading wi
 # Visuals
 <img width="630" alt="visual1" src="https://github.com/DorahelyS/HPD/assets/142290529/2226083a-1a26-469a-917f-bba0c1b2d46c">
 <img width="617" alt="visual2" src="https://github.com/DorahelyS/HPD/assets/142290529/1d4a4db9-29c6-4f02-8706-b21434b0756d">
-![visual3](https://github.com/DorahelyS/HPD/assets/142290529/7b817c40-36fa-4e8b-826b-e1b88e9ef8b2)
+<img width="617" alt="visual3" src="https://github.com/DorahelyS/HPD/assets/142290529/aa252bf0-abc5-4d86-baec-b57e5b40a851">
+
+
 
 # Data Takeaways
 1. Bronx has the highest count of units with underlying conditions with violations classified as 'B' or 'C', totaling 5,041 units, representing 42% of the total.
